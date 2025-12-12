@@ -29,9 +29,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 .wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}
 /*# sourceURL=/wp-includes/blocks/group/style.min.css */
 </style>
-<style id="wp-block-query-title-inline-css">
-.wp-block-query-title{box-sizing:border-box}
-/*# sourceURL=/wp-includes/blocks/query-title/style.min.css */
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=/wp-includes/blocks/heading/style.min.css */
 </style>
 <style id="wp-block-post-title-inline-css">
 .wp-block-post-title{box-sizing:border-box;word-break:break-word}.wp-block-post-title :where(a){display:inline-block;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}
@@ -135,11 +135,13 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		}
 /*# sourceURL=wp-block-template-skip-link-inline-css */
 </style>
+<link rel="stylesheet" id="storymap-stylesheet-css" href="https://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css?ver=6.9" media="all">
 <link rel="stylesheet" id="timeline-stylesheet-css" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css?ver=6.9" media="all">
 <style id="twentytwentyfive-style-inline-css">
 a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-site-blocks :focus){outline-width:2px;outline-style:solid}.wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-item:not(:last-child){margin-bottom:3px}.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__content{outline-offset:4px}.wp-block-navigation .wp-block-navigation-item ul.wp-block-navigation__submenu-container .wp-block-navigation-item__content{outline-offset:0}blockquote,caption,figcaption,h1,h2,h3,h4,h5,h6,p{text-wrap:pretty}.more-link{display:block}:where(pre){overflow-x:auto}
 /*# sourceURL=/wp-content/themes/twentytwentyfive/style.min.css */
 </style>
+<script src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js?ver=1.0.0" id="storymap-javascript-js"></script>
 <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline-min.js?ver=1.0.0" id="timeline-javascript-js"></script>
 <link rel="https://api.w.org/" href="/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/users/1"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
 <meta name="generator" content="WordPress 6.9">
@@ -188,8 +190,10 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
 
 
 <main class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:var(--wp--preset--spacing--60)">
-	<h1 class="wp-block-query-title">作者： <span>admin</span></h1>
-	 
+	
+<h1 class="wp-block-heading has-text-align-left">博客</h1>
+
+
 	
 <div class="wp-block-query alignfull is-layout-flow wp-block-query-is-layout-flow">
 	<ul class="alignfull wp-block-post-template is-layout-flow wp-block-post-template-is-layout-flow"><li class="wp-block-post post-10 post type-post status-publish format-standard hentry category-uncategorized">

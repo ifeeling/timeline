@@ -68,11 +68,13 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		}
 /*# sourceURL=wp-block-template-skip-link-inline-css */
 </style>
+<link rel="stylesheet" id="storymap-stylesheet-css" href="https://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css?ver=6.9" media="all">
 <link rel="stylesheet" id="timeline-stylesheet-css" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css?ver=6.9" media="all">
 <style id="twentytwentyfive-style-inline-css">
 a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-site-blocks :focus){outline-width:2px;outline-style:solid}.wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-item:not(:last-child){margin-bottom:3px}.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__content{outline-offset:4px}.wp-block-navigation .wp-block-navigation-item ul.wp-block-navigation__submenu-container .wp-block-navigation-item__content{outline-offset:0}blockquote,caption,figcaption,h1,h2,h3,h4,h5,h6,p{text-wrap:pretty}.more-link{display:block}:where(pre){overflow-x:auto}
 /*# sourceURL=/wp-content/themes/twentytwentyfive/style.min.css */
 </style>
+<script src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js?ver=1.0.0" id="storymap-javascript-js"></script>
 <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline-min.js?ver=1.0.0" id="timeline-javascript-js"></script>
 <link rel="https://api.w.org/" href="/wp-json/"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
 <meta name="generator" content="WordPress 6.9">
@@ -89,7 +91,48 @@ a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-
 	</style>
 </head>
 <body>
-	<div id="timeline-6" style="width:100%; height:100vh;"></div><script type="text/javascript">
+	<div id="timeline-6" style="width:100%; height:100vh;"></div><style type="text/css">
+.tl-slide .tl-slide-background {
+    /* 所有背景都设置成黑白灰 */
+    filter:grayscale(100%);  
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#timeline-embed {
+  height: 100%;
+}
+/* 在有背景照片中引用签名的颜色 */
+.tl-slide.tl-full-image-background blockquote cite {
+  color: #f2f2f2;
+}
+/* 在白色背景中引用签名的颜色 */
+.tl-timeline blockquote cite {
+  color: #999999;
+}
+/* 日期 */
+.tl-text .tl-headline-date small,
+.tl-text h3.tl-headline-date small {
+  font-size: 20px;
+}
+.tl-text .tl-headline-date,
+.tl-text h3.tl-headline-date {
+  font-size: 20px;
+  margin: 0 0 5px 0;
+}
+/* 引用中的作者和内容间隔*/
+blockquote cite {
+    margin-top: 10px;
+}
+
+
+
+
+</style>
+<script type="text/javascript">
     var options = {
         font: "PT",
         hash_bookmark: true, //如果设置为 true，TimelineJS 会在每次幻灯片推进时更新浏览器 URL，以便用户可以直接链接到特定的幻灯片。
